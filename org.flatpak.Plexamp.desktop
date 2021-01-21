@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Plexamp
+Exec=org.flatpak.Plexamp
+Terminal=false
+Type=Application
+Icon=org.flatpak.Plexamp
+StartupWMClass=plexamp
+X-AppImage-Version=3.4.1
+Comment=The best little audio player on the planet
+Categories=AudioVideo;
