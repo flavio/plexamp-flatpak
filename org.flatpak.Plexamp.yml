@@ -43,4 +43,5 @@ finish-args:
   - --share=network
   # Write user settings
   - --filesystem=~/.config/Plexamp
-
+  # Access multimedia keys
+  - --socket=session-bus
