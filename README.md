@@ -18,8 +18,8 @@ This repository contains the source code of the Plexamp flatpak.
 The flatpak can be built locally using the following commands:
 
 ```shell
-$ flatpak-builder --user --install build-dir --force-clean org.flatpak.Plexamp.yml
-$ flatpak-builder --user --install build-dir --force-clean org.flatpak.Plexamp.yml
+$ make build
+$ make install
 ```
 
 The flatpak can be run with the following command:
@@ -27,6 +27,8 @@ The flatpak can be run with the following command:
 ```
 $ flatpak run org.flatpak.Plexamp
 ```
+
+There's also a `run` target inside of the Makefile.
 
 # TODO
 
