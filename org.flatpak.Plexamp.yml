@@ -1,6 +1,6 @@
 app-id: org.flatpak.Plexamp
 runtime: org.freedesktop.Platform
-runtime-version: '19.08'
+runtime-version: '20.08'
 sdk: org.freedesktop.Sdk
 command: run.sh
 modules:
@@ -8,11 +8,11 @@ modules:
     buildsystem: simple
     sources:
       - type: file
-        url: https://plexamp.plex.tv/plexamp.plex.tv/desktop/Plexamp-3.4.1.AppImage
-        sha256: 56ff9ed6ae5386e5c33d7f1b69253eeff53ade9ebf76f87466f49c3b52e88fe5
+        url: https://plexamp.plex.tv/plexamp.plex.tv/desktop/Plexamp-3.5.0.AppImage
+        sha256: bae915a37cd0415e44dd13a09b41085b6a541c128e215ed10a6e878cc31a78f0
     build-commands:
-      - chmod 755 ./Plexamp-3.4.1.AppImage
-      - ./Plexamp-3.4.1.AppImage --appimage-extract
+      - chmod 755 ./Plexamp-3.5.0.AppImage
+      - ./Plexamp-3.5.0.AppImage --appimage-extract
       - mv squashfs-root /app/plexamp
       - install -Dm644 /app/plexamp/plexamp.png /app/share/icons/hicolor/512x512/apps/org.flatpak.Plexamp.png
   - name: desktop-files
