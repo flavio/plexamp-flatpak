@@ -8,11 +8,11 @@ modules:
     buildsystem: simple
     sources:
       - type: file
-        url: https://plexamp.plex.tv/plexamp.plex.tv/desktop/Plexamp-4.3.0.AppImage
-        sha256: 3b6b00d80faaae5b42b99ba04657c21f8638ca2b85e3707edea7d7cd3937f0f3
+        url: https://plexamp.plex.tv/plexamp.plex.tv/desktop/Plexamp-4.6.2.AppImage
+        sha256: b8380cc656b4025c6e4717e209c740335c66d39b411d374dd624c36dcd0845ef
     build-commands:
-      - chmod 755 ./Plexamp-4.3.0.AppImage
-      - ./Plexamp-4.3.0.AppImage --appimage-extract
+      - chmod 755 ./Plexamp-4.6.2.AppImage
+      - ./Plexamp-4.6.2.AppImage --appimage-extract
       - mv squashfs-root /app/plexamp
       - install -Dm644 /app/plexamp/plexamp.png /app/share/icons/hicolor/512x512/apps/org.flatpak.Plexamp.png
   - name: desktop-files
